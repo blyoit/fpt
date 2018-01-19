@@ -42,6 +42,10 @@ a {
     padding: 0;
 }
 
+.nav-menu nav ul li {
+    position: relative;
+}
+
 .nav-menu nav ul li a {
     color: rgb(255, 255, 255);
 }
@@ -53,6 +57,16 @@ a {
 
 .nav-tab:hover {
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sub-menu {
+    display: none;
+}
+
+.nav-menu nav ul li:hover .sub-menu {
+    display: block;
+    z-index: 69;
+    right: 20%;
 }
 
 .contect {
