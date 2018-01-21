@@ -5,7 +5,7 @@ body {
     padding: 0;
 }
 
-body, div, nav, ul{
+body, nav, ul{
     display: block;
 }
 
@@ -19,10 +19,11 @@ a {
     position: fixed;
     top: 0;
     right: 0;
-    width: 15%;
+    width: 10%;
     height: 100%;
     background: rgb(70, 70, 70);
     font-size: 20px;
+    z-index: 3;
 }
 
 .logo {
@@ -53,27 +54,36 @@ a {
 .nav-tab {
     padding: 15px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;  
 }
 
 .nav-tab:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, .1);
 }
 
 .sub-menu {
     display: none;
+    position: absolute;
+    float: left;
+    background: rgb(70, 70, 70);
+    width: 100%;
+    top: 0;
+    right: 100%;
+    z-index: 69;
 }
 
 .nav-menu nav ul li:hover .sub-menu {
-    display: block;
-    z-index: 69;
-    right: 20%;
+    display: inline-block;
 }
 
 .contect {
     float: left;
     position: relative;
-    width: 85%;
+    width: 90%;
     height: 100%;
+    z-index: 2;
 }
 
 .banner {
@@ -99,6 +109,14 @@ a {
 }
 
 .footer {
+    position: relative;
+    float: left;
+    width: 90%;
+    height: 50px;
+    bottom: 0;
     text-align: right;
-    padding-right: 20px;
+    border-top: 1px solid rgb(70, 70, 70);
+    padding: 0 15px;
+    z-index: 100;
+    box-sizing: border-box;
 }
