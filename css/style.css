@@ -120,6 +120,9 @@ a {
     font-size: 14px;
 }
 
+.footer .img {
+    margin: 10px auto 0 auto;
+
 @media all and (max-width: 1024px) {
     .nav-menu {
         width: 15%;
