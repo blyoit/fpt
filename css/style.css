@@ -120,11 +120,6 @@ a {
     font-size: 14px;
 }
 
-.footer p {
-    padding: auto 0px;
-    margin-right: 10px;
-}
-
 @media all and (max-width: 1024px) {
     .nav-menu {
         width: 15%;
